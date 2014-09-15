@@ -37,47 +37,41 @@
 		]]>
 	
 	</description>
+	<languages folder="administrator/language/en-GB">
+		<language tag="en-GB">en-GB.mod_tbworks_mobilemenu.ini</language>
+	</languages>	
+	<media folder="media" destination="tbworks">
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
 	<files>
 		<filename module="mod_tbworks_mobilemenu">mod_tbworks_mobilemenu.php</filename>
 		<filename>mod_tbworks_mobilemenu.xml</filename>
-		<filename>helper.php</filename>
-		<filename>changelog.php</filename>
 		<filename>index.html</filename>
-		<folder>fields</folder>
 		<folder>tmpl</folder>
-		<folder>lists</folder>
-		<folder>themes</folder>
 		<folder>assets</folder>	
 	</files>
+	
 	<config>
 		<fields name="params">
-			<fieldset addfieldpath="modules/mod_tbworks_mobilemenu/fields" name="basic">
-				<field
-					name="menutype"
-					type="menu"
-					label="MOD_MENU_FIELD_MENUTYPE_LABEL"
-					description="MOD_MENU_FIELD_MENUTYPE_DESC" />
-				<field
-					name="moduleclass_sfx"
-					type="text"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
-	</fieldset>
-	<fieldset name="advanced">
-			<field
-				name="cache"
-				type="list"
-				label="Caching"
-				description="Select whether to cache the content of this module">
-			<option value="1">Use global</option>
-			<option value="0">No caching</option>
-			</field>
-				<field
-				name="cache_time"
-				type="text"
-				label="Cache Time"
-				description="The time before the module is recached" />
-	</fieldset>
+			<fieldset name="basic">
+				
+			</fieldset>
+			<fieldset name="advanced">
+					<field
+						name="cache"
+						type="list"
+						label="Caching"
+						description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+					</field>
+						<field
+						name="cache_time"
+						type="text"
+						label="Cache Time"
+						description="The time before the module is recached" />
+			</fieldset>
 		</fields>
 	</config>
 </extension>
