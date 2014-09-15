@@ -58,19 +58,20 @@
 				
 			</fieldset>
 			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					label="Caching"
+					description="Select whether to cache the content of this module">
+				<option value="1">Use global</option>
+				<option value="0">No caching</option>
+				</field>
 					<field
-						name="cache"
-						type="list"
-						label="Caching"
-						description="Select whether to cache the content of this module">
-					<option value="1">Use global</option>
-					<option value="0">No caching</option>
-					</field>
-						<field
-						name="cache_time"
-						type="text"
-						label="Cache Time"
-						description="The time before the module is recached" />
+					name="cache_time"
+					type="text"
+					label="Cache Time"
+					description="The time before the module is recached" />
 			</fieldset>
 		</fields>
 	</config>
